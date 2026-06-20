@@ -2,9 +2,15 @@
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": [
-      "/_next/static/*",
+      "/_next/*",
       "/assets/*",
-      "*.{png,jpg,gif,ico,svg,css,js,json}"
+      "*.{png,jpg,gif,ico,svg,css,js,json,woff,woff2}"
     ]
-  }
+  },
+  "routes": [
+    {
+      "route": "/",
+      "rewrite": "/index.html"
+    }
+  ]
 }
